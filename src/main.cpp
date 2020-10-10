@@ -10,7 +10,7 @@ void setup() {
 
 void loop()
 {
-  // some delay is needed just to be sure that usb keyboard to gets enabled on Operating system
+  // some delay is needed just to be sure that usb keyboard gets enabled on Operating system
   delay(1500);
   // Keyboard library start
   Keyboard.begin();
