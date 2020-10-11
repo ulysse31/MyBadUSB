@@ -41,8 +41,8 @@ You can use:
 Only es_es and en_us are full-tested.
 
  */
-
-#define kbd_es_es
+//#define kbd_en_us
+#define kbd_fr_fr
 
 #include "HID.h"
 
