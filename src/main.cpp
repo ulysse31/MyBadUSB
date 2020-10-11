@@ -8,7 +8,7 @@ void setup() {
   // Keyboard library start
   Keyboard.begin();
   // Some delay is needed just to be sure that usb keyboard gets enabled on Host Operating system (may vary between target)
-  delay(1200);
+  delay(1800);
 }
 
 void loop()
