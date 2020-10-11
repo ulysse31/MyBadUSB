@@ -62,7 +62,6 @@ void loop()
   Keyboard.print("exit");
   Keyboard.press(KEY_RETURN);
   Keyboard.release(KEY_RETURN);
-  Keyboard.end();
   // We are in a awareness campaign, this is enough so we stop here and wait forever ^^ 
   delay(4000000000);
 }
