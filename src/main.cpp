@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include <Keyboard.h>
+#include <ArduinoKeyboardLib.h>
 
 // IF SOMEONE RE-USE THIS CODE : think on replacing this before anything else ^^'
 #define ALERT_MAIL "\"ulysse31@gmail.com\""
