@@ -5,14 +5,14 @@
 #define ALERT_MAIL "\"ulysse31@gmail.com\""
 
 void setup() {
+  // Keyboard library start
+  Keyboard.begin();
   // Some delay is needed just to be sure that usb keyboard gets enabled on Operating system
   delay(1200);
 }
 
 void loop()
 {
-  // Keyboard library start
-  Keyboard.begin();
   // Launch an execute command window
   Keyboard.press(KEY_LEFT_GUI);
   Keyboard.press('r');
