@@ -49,7 +49,7 @@ void loop()
   Keyboard.press(KEY_RETURN);
   delay(10);
   Keyboard.release(KEY_RETURN);
-  Keyboard.print("$Mail.Body =\"Sorry, I'm naughty I plugged in a unknown usb key\"");
+  Keyboard.print("$Mail.Body =\"Sorry, I'm naughty I plugged in a unknown usb key. I Should bring pastries ASAP to the IT in order to beg for mercy ...\"");
   delay(10);
   Keyboard.press(KEY_RETURN);
   delay(10);
